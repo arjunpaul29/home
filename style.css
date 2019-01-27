@@ -1,0 +1,120 @@
+/*
+This work (CSS) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/in/" target="_blank">Creative Commons Attribution-ShareAlike 2.5 India License</a>.</small> <a style="" rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/in/" target="_blank"><img alt="Creative Commons Licence" style="border-width: 0pt;" src="https://i.creativecommons.org/l/by-sa/2.5/in/88x31.png" target="_blank" align="right"></a><br><br>
+
+You can copy, share & modify this file according to your requirement but you have to license the modified version under the same license mentioned above.
+*/
+/* A Stylesheet written in CSS codes. */
+body {
+     margin: 0;
+     font-family: arial, sans-serif, monospace;
+     padding: 0;
+     }
+
+ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+   }
+
+li1 {
+    float: left;
+    }
+
+li1 a {
+      display: block;
+      color: white;
+      padding: 16px;
+      text-decoration: none;
+      }
+/* This is used to create bright shadow effect in the menue while hovering mouse over them. */
+ul1 li1 a:hover
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Dropdown section */
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: above;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgba(255, 255, 255, 0.1);}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End of dropdown */
+
+/* Start TeX & LaTeX mode */
+.tex sub, .latex sub, .latex sup {
+  text-transform: uppercase;
+}
+
+.tex sub, .latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.tex, .latex, .tex sub, .latex sub {
+  font-size: 1em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+/* End of TeX & LaTeX mode */
+
+/* Main Config */
+
+.main {
+      padding: 16px;
+      margin-top: 30px;
+      }
+
+.main a {
+        text-decoration: none;  /* This is used to remove text decoration, like underline in URLs. */
+        color: #000000;  /* This is used to remove auto coloring texts like URLs. */
+        }
+
+/* End of CSS */

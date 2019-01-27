@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <link rel="icon" type="image/png" href="Icon/TIFR-logo.png">
+<!-- MathJax Configuration -->
+<script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({    
+  extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+          TeX: {extensions: ['xypic.js','autoload-all.js'], TagSide: 'left'},
+              tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+                  'HTML-CSS': { scale: 85 }  });
+                  </script>
+</script>
+  <script type="text/javascript" src="MathJax/MathJax.js">
+</script>
+<!-- End of MathJax configuration -->
+  <link rel="stylesheet" href="style.css" type="text/css"><title>Papers & Preprints</title>
+    
+  <link rel="icon" type="image/png" href="http://www.math.tifr.res.in/%7Eapmath90/Icon/TIFR-logo.png">
+    <script src="jquery-1.10.2.js"></script>
+  <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+  </script> 
+</head>
+<!-- Welcome guest. You are viewing the html source codes from the IP <?php echo $_SERVER['REMOTE_ADDR'] ; ?> -->
+<body>
+  <div id="header"></div>
+
+  <div class="main">
+
+    <hr style="width: 100%; height: 3px;">
+
+    <h2>Papers and Preprints</h2>
+
+    <hr style="width: 100%; height: 3px;">
+
+    <big>
+    <ol type="1">
+      <li><span style="font-style: italic;">Equivariant bundles and connections</span>, (with Indranil Biswas), <a href="http://dx.doi.org/10.1007/s10455-016-9538-9" target=_blank><i>Ann. Global Anal. Geom.</i> <b>51</b> (2017), 347--358</a>; <a href="http://arXiv.org/abs/1611.08854" target=_blank>arXiv:1611.08854</a>.</li><br>
+
+      <li><span style="font-style: italic;">Criterion for logarithmic connections with prescribed residues</span>, (with Indranil Biswas and Ananyo Dan), <a href="https://dx.doi.org/10.1007/s00229-017-0935-6" target=_blank><i>Manuscr. Math.</i> <b>155</b> (2018), 77--88</a>; <a href="https://arxiv.org/abs/1703.09864" target=_blank>arXiv:1703.09864</a>.</li><br> 
+
+      <li><span style="font-style: italic;">Equivariant bundles and adapted connections</span>, (with Indranil Biswas, and Arideep Saha), <a href="http://nyjm.albany.edu/j/2017/23-39.html" target=_blank><i>New York J. Math.</i> <b>23</b> (2017), 859--872</a>; <a href="https://arxiv.org/abs/1707.05467" target=_blank>arXiv:1707.05467</a>.</li><br> 
+
+      <li><span style="font-style: italic;">Logarithmic connections on principal bundles over a Riemann surface</span>, (with Indranil Biswas, Ananyo Dan and Arideep Saha), <i><a href="https://doi.org/10.1142/S0129167X17500884" target=_blank>Internat. J. Math. </a></i> Vol. <b>28</b>, No. 12 (2017) 1750088 [18 pages]; <a href="https://arxiv.org/abs/1705.00852" target=_blank>arXiv:1705.00852</a>.</li><br> 
+
+      <li><span style="font-style: italic;">Fundamental group of moduli of principal bundles on curves</span>, (with Indranil Biswas and Swarnava Mukhopadhyay), <a href="http://arxiv.org/abs/1609.06436" target=_blank>arXiv:1609.06436</a>.</li><br>
+      
+    </ol>  
+    </big>
+<!--    <hr style="width: 100%; height: 3px;">
+    <h2>Lecture Notes</h2>
+    <hr style="width: 100%; height: 3px;">
+    <big>
+    <ol type="1">
+        <li><span style="font-style: italic;">Semistable Vector Bundles and Higgs Bundles</span> (<i>A lecture note for a Mathematics Students' seminar at the School of Mathematics, tifr, Mumbai</i>) November 21, 2017 [<a href="papers/unpub/higgs.pdf" target=_blank>pdf</a>]. </li>
+    </ol>
+    -->
+  <div id="footer"></div>
+
+  </div>
+</body>
+<?php $fp = fopen ("papr.at", 'r');
+$count = fread ($fp, 1024);
+fclose ($fp);
+$ip=$_SERVER['REMOTE_ADDR'];
+$sDate = date("Y-m-d h:i:s a");
+$fp1 = fopen ("paprips.tox", 'a');
+fwrite($fp1, "Visitor No. $count from IP $ip on the Date (YYY/MM/DD) & Time (HH/MM/SS) $sDate (IST).\n");
+fclose ($fp1);
+$count=$count+1;
+$fp = fopen ("papr.at", 'w');
+fwrite($fp, "$count\n");
+fclose ($fp); ?>
+</html>
