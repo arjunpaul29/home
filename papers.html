@@ -27,7 +27,7 @@
     });
   </script> 
 </head>
-<!-- Welcome guest. You are viewing the html source codes from the IP <?php echo $_SERVER['REMOTE_ADDR'] ; ?> -->
+
 <body>
   <div id="header"></div>
 
@@ -38,7 +38,8 @@
     <h2>Papers and Preprints</h2>
 
     <hr style="width: 100%; height: 3px;">
-
+    You may find all my research papers in the following links: <href="https://arxiv.org/a/paul_a_2.html" target="_blank">arXiv</a>, <href="https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1212378" target="_blank">MathSciNet</a> and <href="https://www.researchgate.net/profile/Arjun_Paul2" target="_blank">Research Gate</a>.
+    
     <big>
     <ol type="1">
       <li><span style="font-style: italic;">Equivariant bundles and connections</span>, (with Indranil Biswas), <a href="http://dx.doi.org/10.1007/s10455-016-9538-9" target=_blank><i>Ann. Global Anal. Geom.</i> <b>51</b> (2017), 347--358</a>; <a href="http://arXiv.org/abs/1611.08854" target=_blank>arXiv:1611.08854</a>.</li><br>
@@ -49,10 +50,16 @@
 
       <li><span style="font-style: italic;">Logarithmic connections on principal bundles over a Riemann surface</span>, (with Indranil Biswas, Ananyo Dan and Arideep Saha), <i><a href="https://doi.org/10.1142/S0129167X17500884" target=_blank>Internat. J. Math. </a></i> Vol. <b>28</b>, No. 12 (2017) 1750088 [18 pages]; <a href="https://arxiv.org/abs/1705.00852" target=_blank>arXiv:1705.00852</a>.</li><br> 
 
-      <li><span style="font-style: italic;">Fundamental group of moduli of principal bundles on curves</span>, (with Indranil Biswas and Swarnava Mukhopadhyay), <a href="http://arxiv.org/abs/1609.06436" target=_blank>arXiv:1609.06436</a>.</li><br>
-      
+      <li><span style="font-style: italic;">Fundamental group of moduli of principal bundles on curves</span>, (with Indranil Biswas and Swarnava Mukhopadhyay), <a href="http://arxiv.org/abs/1609.06436" target=_blank>arXiv:1609.06436</a>.</li><br> 
+
+      <li><span style="font-style: italic;">Picard group and fundamental group of the moduli of Higgs bundles on curves</span>, (with Sujoy Chakraborty), <a href="https://doi.org/10.1515/coma-2018-0009" target=_blank><i>Complex Manifolds</i>, Vol. <b>5</b> (2018), 146--149.</a></li><br> 
+
+<li><span style="font-style: italic;">System of Hodge Bundles and Generalized Opers on Smooth Projective Varieties</span>, (with Suratno Basu and Arideep Saha), <a href="https://drive.google.com/file/d/1vCA4GI2MapQRXu3SGTvykihB1e2UZuMI/view?usp=sharing" target=_blank><i>[Version-1 (pdf)]</i></a>.</li><br>
+
+<li><span style="font-style: italic;">Generalized Opers and Hitchin-Mochizuki Morphism over Smooth Projective Varieties</span>, (with Suratno Basu and Arideep Saha) [under preparation].</li><br>
     </ol>  
     </big>
+    
 <!--    <hr style="width: 100%; height: 3px;">
     <h2>Lecture Notes</h2>
     <hr style="width: 100%; height: 3px;">
@@ -65,16 +72,5 @@
 
   </div>
 </body>
-<?php $fp = fopen ("papr.at", 'r');
-$count = fread ($fp, 1024);
-fclose ($fp);
-$ip=$_SERVER['REMOTE_ADDR'];
-$sDate = date("Y-m-d h:i:s a");
-$fp1 = fopen ("paprips.tox", 'a');
-fwrite($fp1, "Visitor No. $count from IP $ip on the Date (YYY/MM/DD) & Time (HH/MM/SS) $sDate (IST).\n");
-fclose ($fp1);
-$count=$count+1;
-$fp = fopen ("papr.at", 'w');
-fwrite($fp, "$count\n");
-fclose ($fp); ?>
+
 </html>
