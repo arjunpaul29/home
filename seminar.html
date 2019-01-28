@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <link rel="icon" type="image/png" href="Icon/TIFR-logo.png">
+<!-- MathJax Configuration -->
+<script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({    
+  extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+          TeX: {extensions: ['xypic.js','autoload-all.js'], TagSide: 'left'},
+              tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+                  'HTML-CSS': { scale: 85 }  });
+                  </script>
+
+  <script type="text/javascript" src="MathJax/MathJax.js">
+</script>
+<!-- End of MathJax configuration -->
+  <link rel="stylesheet" href="style.css" type="text/css"><title>Seminar</title>
+  <script src="jquery-1.10.2.js"></script>
+  <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+  </script> 
+</head>
+<!-- Welcome guest. You are viewing the html source codes from the IP <?php echo $_SERVER['REMOTE_ADDR'] ; ?> -->
+<body>
+  <div id="header"></div>
+
+  <div class="main">
+    <hr style="width: 100%; height: 1px;">
+
+    <h2>Seminar on Vector Bundles and Moduli Spaces of Sheaves</h2>
+
+    <hr style="width: 100%; height: 1px;">
+
+    <big> Initially the plan of this lecture series is to
+follow the the book <a href="https://books.google.co.in/books?id=_mYV1q0RVzIC&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false" target="_blank">The Geometry of Moduli Spaces of Sheaves</a><a href="https://ncatlab.org/nlab/files/HuybrechtsLehn.pdf" target="_blank"> by
+D. Huybrechts and M. Lehn</a>. Some of the details are given below. All are welcome.
+    </big>
+    <br><br>
+
+<!-- Beginning of the lecture table -->
+
+<table style="text-align: left; width: 100%; height: 90%;" border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 28px; width: 69px; text-align: center; color: black;">Lecture<br>
+            </td>
+            <td style="vertical-align: top; height: 28px; width: 143px; text-align: center; color: black;">Speaker<br>
+            </td>
+            <td style="vertical-align: top; height: 28px; width: 110px; text-align: center; color: black;">Date<br>
+            </td>
+            <td style="vertical-align: top; height: 28px; text-align: center; width: 110px; color: black;">Time<br>
+            </td>
+            <td style="vertical-align: top; height: 28px; text-align: center; width: 116px; color: black;">Venue<br>
+            </td><td style="vertical-align: top; text-align: center; height: 28px;"><span style="color: black;">Details</span><br>
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 69px; text-align: center; height: 42px;">1<br>
+            </td>
+            <td style="vertical-align: top; width: 143px; text-align: center; height: 42px;"><span style="color: black;">Sudarshan Gurjar<br>
+(IIT Bombay)<br>
+</span>
+            </td>
+            <td style="vertical-align: top; width: 110px; text-align: center; height: 42px;">12.11.2015<br>
+            </td>
+            <td style="vertical-align: top; width: 110px; text-align: center; height: 42px;">8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; width: 116px; text-align: center; height: 42px;">A-369<br>
+(Mathematics Seminar room)<br>
+            </td><td style="vertical-align: top; text-align: left;">We
+define the notions of pure sheaves, torsion filtrations, E-regular
+divisors and prove that the E-regular divisors forms an open dense
+subset of the linear system $|L|$. Then we derive an expression of the
+Hilbert polynomial \[P(E,m) = \sum\limits_{i=0}^d
+\chi(E|_{\mathop\cap\limits_{j \leq i}H_j}) {{m+i-1}\choose{i}} =
+\sum\limits_{i=0}^d \alpha_i(E) \frac{m^i}{i!}, \] where $H_1, ... ,H_d
+\in |L|$ are $E$-regular divisors. Then we define the Gieseker
+(semi)stbility.<br>
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 69px; height: 55px; text-align: center;">2<br>
+            </td>
+            <td style="vertical-align: top; width: 143px; height: 55px; text-align: center;">Sudarshan Gurjar<br>
+            <span style="color: black;">(IIT Bombay)</span><br>
+            </td>
+            <td style="vertical-align: top; width: 110px; height: 55px; text-align: center;">16.11.2015<br>
+            </td>
+            <td style="vertical-align: top; width: 110px; height: 55px; text-align: center;">2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; width: 116px; height: 55px; text-align: center;">A-369<br>
+
+(Mathematics Seminar room)<br>
+            </td><td style="vertical-align: top;">&nbsp;We discuss various properties of Gieseker (semi)stable sheaves, prove that
+Gieseker (semi)stability and $\mu$-(semi)stability agrees on curves, and discuss an example of semistable; stable sheaves.<br>
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 75px; text-align: center;">3<br>
+            </td>
+            <td style="vertical-align: top; height: 75px; width: 143px; text-align: center;">Arjun Paul<br>
+            </td>
+            <td style="vertical-align: top; height: 75px; width: 110px; text-align: center;">23.11.2015<br>
+            </td>
+            <td style="vertical-align: top; height: 75px; width: 110px; text-align: center;">2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 75px; width: 116px; text-align: center;">A-369<br>
+(Mathematics Seminar room)<br>
+            </td><td style="vertical-align: top;">We
+define $\mu$-(semi)stability in higher dimension, discuss its relations
+with Gieseker (semi)stability, and various properties of
+$\mu$-(semi)stability with some examples.<br>
+            </td>
+
+          </tr><tr>
+            <td style="vertical-align: top; text-align: center; height: 63px;">4<br>
+            </td>
+            <td style="vertical-align: top; text-align: center; height: 63px;">Arjun Paul<br>
+            </td>
+            <td style="vertical-align: top; text-align: center; height: 63px;">26.11.2015<br>
+            </td>
+            <td style="vertical-align: top; text-align: center; height: 63px;">8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; text-align: center; height: 63px;">A-369<br>
+
+(Mathematics Seminar room)</td>
+            <td style="vertical-align: top; height: 63px;">We define Harder-Narasimhan filtrations of a pure sheaf, and prove its existance and uniqueness.
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 89px; text-align: center;">5<br>
+            </td>
+            <td style="vertical-align: top; height: 89px; text-align: center;">Arjun Paul<br>
+            </td>
+            <td style="vertical-align: top; height: 89px; text-align: center;">30.11.2015<br>
+            </td>
+            <td style="vertical-align: top; height: 89px; text-align: center;">8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 89px; text-align: center;">A-369<br>
+
+
+(Mathematics Seminar room)</td>
+            <td style="vertical-align: top; height: 89px;">We
+show that the semistability remains invariant under the extension of
+the base field $k$, and conclude that the Harder-Narasimhan filtration
+is compatible with the extension of the base field $k$. Then we show by
+an example that stable sheaf may not remain stable after extension of
+the base field in general. Then we prove the existance of Jordan-Hölder
+filtration $0 = E_0 \subset E_1 \subset \cdots \subset E_l = E$ of a
+semistable sheaf $E$ and prove uniqueness of the associated graded
+sheaf $gr(E) := \mathop\bigoplus\limits_{i=1}^l E_i/E_{i-1}$</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 85px; text-align: center;">6<br>
+            </td>
+            <td style="vertical-align: top; height: 85px; text-align: center;">Arjun Paul<br>
+            </td>
+            <td style="vertical-align: top; height: 85px; text-align: center;">03.12.2015<br>
+            </td>
+            <td style="vertical-align: top; height: 85px; text-align: center;">8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 85px; text-align: center;">A-369<br>
+
+
+
+(Mathematics Seminar room)</td>
+            <td style="vertical-align: top; height: 85px;">We
+define the notion of S-equivalancy, polystability, socle and extended
+socle for a semistable sheaf, and prove some related results. We show
+that the stable sheaf defined over an algebraically closed field $k$
+remains stable after extension of the base field $k$.<br>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; text-align: center; height: 63px;">7<br>
+            </td>
+            <td style="vertical-align: top; text-align: center; height: 63px;">Arjun Paul<br>
+<span style="color: black;"></span></td>
+            <td style="vertical-align: top; height: 63px; text-align: center;">04.01.2016
+            </td>
+            <td style="vertical-align: top; height: 63px; text-align: center;">2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 63px; text-align: center;">A-369<br>
+
+
+
+
+(Mathematics Seminar room)</td>
+            <td style="vertical-align: top; height: 63px;">We define Hilbert and Quot functors, and using Quot scheme and
+Grothendieck's boundedness lemma we prove that the properties of being
+simple, of pure dimension, semistable and geometrically stable are open
+in a flat family of coherent sheaves.
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 82px; text-align: center;">8<br>
+            </td>
+            <td style="vertical-align: top; height: 82px; text-align: center;">Arjun Paul<span style="color: black;"></span><span style="color: black;"></span>
+            </td>
+            <td style="vertical-align: top; height: 82px; text-align: center;">
+            18.01.2016<br><br>
+
+
+</td>
+            <td style="vertical-align: top; height: 82px; text-align: center;">8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 82px; text-align: center;">A-369<br>
+
+
+
+
+
+(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 82px;">
+We define Mumford-Castelnuovo regularity for coherent sheaf and prove
+some related results required to prove Grothendieck's
+boundedness lemma for a family of coherent sheaves on projective
+$k$-schemes.<br>
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>9<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>Arjun Paul<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 29.02.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>8:15 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;">
+We prove some improtant boundedness results for a family of coherent
+sheaves defined over a projective $k$-scheme of finite type.
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 58px; text-align: center;"><br>10<br>
+            </td>
+            <td style="vertical-align: top; height: 58px; text-align: center;"><br>Arjun Paul<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 58px; text-align: center;"><br>03.03.2016<br>
+            </td>
+            <td style="vertical-align: top; height: 58px; text-align: center;"><br>8:30 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 58px; text-align: center;">A-369<br>
+(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 58px;">We prove Grothendieck's boundedness lemma for a family of coherent sheaves on projective $k$-schemes.             
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>11<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>Arjun Paul<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 08.03.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>8:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> We prove relativie Harder-Narasimhan filtration theorem.
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>12<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>Arideep Saha<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 08.04.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>4:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Deformation theory - Deformation of closed subschemes, line bundles, coherent sheaves etc.	    
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>13<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>Arideep Saha<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 16.04.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>11:00 AM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Deformation theory - the $T^i$-functors and its applications.	    
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>14<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> Arideep Saha<span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 21.04.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Deformation Theory - The Infinitesimal Lifting Property.	    
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>15<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> Arideep Saha <span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 28.04.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Deformation of Rings.
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>16<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> Rohith Varma <span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 05.05.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Higgs bundles and Hitchin maps I.	    
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>17<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> Rohith Varma <span style="color: black;"></span><span style="color: black;"></span> <br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br> 19.05.2016
+<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;"><br>2:00 PM<br>
+            </td>
+            <td style="vertical-align: top; height: 80px; text-align: center;">A-369<br>(Mathematics Seminar room)
+            </td>
+            <td style="vertical-align: top; height: 80px;"> Higgs bundles and Hitchin maps II.    
+</td>
+          </tr>
+          
+
+
+        </tbody>
+      </table>
+    <br>
+
+  <div id="footer"></div>
+
+</div>
+</body>
+</html>
