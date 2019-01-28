@@ -8,11 +8,20 @@
   MathJax.Hub.Config({    
   extensions: ['tex2jax.js'],
       jax: ['input/TeX','output/HTML-CSS'],
-          TeX: {extensions: ['xypic.js','AMSmath.js', 'AMSsymbols.js','unicode.js', 'color.js'], TagSide: 'left'},
+          TeX: {extensions: ['AMSmath.js', 'AMSsymbols.js','unicode.js', 'color.js'], TagSide: 'left'},
               tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
                   'HTML-CSS': { scale: 85 }  });
                   </script>
-                  
+
+<script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({    
+  extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+          TeX: {extensions: ['/extensions/xypic.js'], TagSide: 'left'},
+              tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+                  'HTML-CSS': { scale: 85 }  });
+                  </script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
 </script>
 <!-- End of MathJax configuration -->
@@ -25,7 +34,7 @@
     });
   </script> 
 </head>
-<!-- Welcome guest. You are viewing the html source codes from the IP <?php echo $_SERVER['REMOTE_ADDR'] ; ?> -->
+
 <body>
   <div id="header"></div>
   <div class="main">
