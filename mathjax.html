@@ -4,10 +4,10 @@
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">
   <link rel="icon" type="image/png" href="academics.png">
 <!-- MathJax Configuration -->
-<script type='text/x-mathjax-config'>
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({    
-  extensions: ['tex2jax.js'],
-      jax: ['input/TeX','output/HTML-CSS'],
+  extensions: ["tex2jax.js"],
+      jax: ["input/TeX","output/HTML-CSS"],
           TeX: {extensions: ["AMSmath.js", "AMSsymbols.js","unicode.js", "color.js","http://sonoisa.github.io/xyjax_ext/xypic.js"], TagSide: 'left'},
               tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
                   'HTML-CSS': { scale: 85 }  });
@@ -117,6 +117,35 @@ U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
  & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
  & Y \ar[r]^g & Z
 }
+$$
+	
+<b>Example 3.</b> Code: 
+<xmp>
+
+\[
+A\begin{xy}
+\xymatrix{
+R \ar@<1ex>[r] \ar@<-1ex>[r] &
+U \ar[r]^{a} &
+F
+}
+\end{xy}B
+\]
+
+</xmp>
+
+Output: <br>
+
+$$
+\[
+A\begin{xy}
+\xymatrix{
+R \ar@<1ex>[r] \ar@<-1ex>[r] &
+U \ar[r]^{a} &
+F
+}
+\end{xy}B
+\]
 $$
 
 </li>
