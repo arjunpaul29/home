@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<script src="https://tikzwolke.com/v1/tikzwolke.js"></script> 
+	
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">
   <link rel="icon" type="image/png" href="academics.png">
 <!-- MathJax Configuration -->
@@ -101,48 +104,52 @@ Output: <br>
 <b>Example 2.</b> Code: 
 <xmp>
 
-\xymatrix{
+\begin{tikzcd}
 U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
  & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
  & Y \ar[r]^g & Z
-}
+\end{tikzcd}
 
 </xmp>
 
 Output: <br>
 
 $$
-\xymatrix{
+\begin{tikzcd}
 U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
  & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
  & Y \ar[r]^g & Z
-}
+\end{tikzcd}
 $$
 	
 <b>Example 3.</b> Code: 
 <xmp>
-
-\begin{xy}
-\xymatrix {
-U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
- & Y \ar[r]^g & Z
-}
-\end{xy}
-
+<script type="text/tikz">
+\begin{center}
+ \begin{tikzcd}
+           & 0 \ar{d}                         & 0 \ar{d}                                &                               & \\   
+  0 \ar{r} & \End(E)(-D) \ar[hook]{d} \ar{r}  & \At(E)(-D) \ar[hook]{d} \ar{r}          & TX(-D) \ar[equal]{d}{} \ar{r} & 0 \\
+  0 \ar{r} & \End(E) \ar{r} \ar[two heads]{d} & p^{-1}(TX(-D)) \ar[two heads]{d} \ar{r} & TX(-D) \ar[u, dashed, bend right=40]{}[right]{f'} \ar{dl}{Res} \ar[l, dotted, bend right=40]{}{f} \ar{r}{} & 0 \\
+           & \End(E)|_{D} \ar[equal]{r}       & \End(E)|_{D}                            &                               &    
+ \end{tikzcd}
+\end{center}
+</script>
 </xmp>
 
 Output: <br>
 
-$$
-\begin{xy}
-\xymatrix {
-U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
- & Y \ar[r]^g & Z
-}
-\end{xy}
-$$
+<script type="text/tikz">
+\begin{center}
+ \begin{tikzcd}
+           & 0 \ar{d}                         & 0 \ar{d}                                &                               & \\   
+  0 \ar{r} & \End(E)(-D) \ar[hook]{d} \ar{r}  & \At(E)(-D) \ar[hook]{d} \ar{r}          & TX(-D) \ar[equal]{d}{} \ar{r} & 0 \\
+  0 \ar{r} & \End(E) \ar{r} \ar[two heads]{d} & p^{-1}(TX(-D)) \ar[two heads]{d} \ar{r} & TX(-D) \ar[u, dashed, bend right=40]{}[right]{f'} \ar{dl}{Res} \ar[l, dotted, bend right=40]{}{f} \ar{r}{} & 0 \\
+           & \End(E)|_{D} \ar[equal]{r}       & \End(E)|_{D}                            &                               &    
+ \end{tikzcd}
+\end{center}
+</script>
+
+
 
 </li>
 </ol>
