@@ -8,7 +8,7 @@ You can copy, share & modify this file according to your requirement but you hav
 body {
      margin: 0;
      font-family: arial, sans-serif, monospace;
-     padding: 10px;
+     padding: 0px;
      }
 
 ol { padding-left: 3.5em; }
@@ -112,7 +112,7 @@ a:hover, .dropdown:hover .dropbtn {
 /* Main Config */
 
 .main {
-      padding: 10px;
+      padding: 20px;
       margin-top: 30px;
       }
 
