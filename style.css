@@ -11,6 +11,9 @@ body {
      padding: 10px;
      }
 
+ol { padding-left: 2.5em; }
+/* ol li { margin: 0; padding-left: 0px; list-style-type: decimal; } */
+
 ul1 {
     list-style-type: none;
     margin: 0;
