@@ -6,7 +6,7 @@ You can copy, share & modify this file according to your requirement but you hav
 /* A Stylesheet written in CSS codes. */ 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 body {
-     margin: 0;
+     margin: -1.0px;
      font-family: arial, sans-serif, monospace;
      padding: 0px;
      }
@@ -112,8 +112,8 @@ a:hover, .dropdown:hover .dropbtn {
 /* Main Config */
 
 .main {
-      padding: 5px;
-      margin-top: 40px; 
+      padding: 15px;
+      margin-top: 45px; 
       }
 
 .main a {
