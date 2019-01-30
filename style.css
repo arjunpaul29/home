@@ -11,7 +11,7 @@ body {
      padding: 10px;
      }
 
-ol { padding-left: 2.5em; }
+ol { padding-left: 3.0em; }
 /* ol li { margin: 0; padding-left: 0px; list-style-type: decimal; } */
 
 ul1 {
@@ -112,7 +112,7 @@ a:hover, .dropdown:hover .dropbtn {
 /* Main Config */
 
 .main {
-      padding: 16px;
+      padding: 10px;
       margin-top: 30px;
       }
 
