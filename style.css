@@ -4,7 +4,7 @@ This work (CSS) is licensed under a <a rel="license" href="http://creativecommon
 You can copy, share & modify this file according to your requirement but you have to license the modified version under the same license mentioned above.
 */
 /* A Stylesheet written in CSS codes. */ 
-/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 body {
      margin: 0px;
      font-family: arial, sans-serif, monospace;
