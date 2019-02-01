@@ -80,46 +80,44 @@ and paste it inside  <xmp><head></xmp> ... <xmp></head></xmp> of your html file.
 (Please write the codes within double dollar symbols as in LaTeX) : <br><br>
 
 <b>Example 1.</b> Code: 
-<xmp>
-	
-	\xymatrix{
-	\mathcal{F}(X) \ar[r]^{T_X} \ar[d]_{\mathcal{F}(\varphi)} & \mathcal{G}(X) \ar[d]^{\mathcal{G}(\varphi)} \\
-	\mathcal{F}(Y) \ar[r]^{T_Y} & \mathcal{G}(Y) 
-	}
-	
+<xmp>	
+\xymatrix{
+\mathcal{F}(X) \ar[r]^{T_X} \ar[d]_{\mathcal{F}(\varphi)} & \mathcal{G}(X) 
+\ar[d]^{\mathcal{G}(\varphi)} \\
+\mathcal{F}(Y) \ar[r]^{T_Y} & \mathcal{G}(Y) 
+}	
 </xmp>
 
 Output: <br>
 <div class="equation"> 
-	\[
-	\xymatrix{
-	\mathcal{F}(X) \ar[r]^{T_X} \ar[d]_{\mathcal{F}(\varphi)} & \mathcal{G}(X) \ar[d]^{\mathcal{G}(\varphi)} \\
-	\mathcal{F}(Y) \ar[r]^{T_Y} & \mathcal{G}(Y) 
-	}
-	\]
+\[
+\xymatrix{
+\mathcal{F}(X) \ar[r]^{T_X} \ar[d]_{\mathcal{F}(\varphi)} & \mathcal{G}(X) 
+\ar[d]^{\mathcal{G}(\varphi)} \\
+\mathcal{F}(Y) \ar[r]^{T_Y} & \mathcal{G}(Y) 
+}
+\]
 </div>
 <br>
 
 <b>Example 2.</b> Code: 
 <xmp>
-
-	\xymatrix{
-	U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- 	& X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
- 	& Y \ar[r]^g & Z
-	}
-
+\xymatrix{
+U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
+& X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
+& Y \ar[r]^g & Z
+}
 </xmp>
 
 Output: <br>
 <div class="equation">
-	\[
-	\xymatrix{
-	U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- 	& X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
- 	& Y \ar[r]^g & Z
-	}
-	\]
+\[
+\xymatrix{
+U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
+& X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
+& Y \ar[r]^g & Z
+}
+\]
 </div>
 <br>
 	
