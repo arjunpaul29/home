@@ -5,6 +5,12 @@ You can copy, share & modify this file according to your requirement but you hav
 */
 /* A Stylesheet written in CSS codes. */ 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+header {
+     margin: 0px;
+     font-family: arial, sans-serif, monospace;
+     padding: 0px;
+     }
+
 body {
      margin: 0px;
      font-family: arial, sans-serif, monospace;
