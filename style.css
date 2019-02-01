@@ -7,9 +7,8 @@ You can copy, share & modify this file according to your requirement but you hav
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 header {
      margin: 0px;
-     font-family: arial, sans-serif, monospace;
      padding: 0px;
-     width: 100%;
+     width: 100%; 
      }
 
 body {
@@ -27,7 +26,7 @@ ul1 {
     padding: 0; 
     overflow: hidden;
     background: rgba(0,0,0,0.7);
-    position: fixed;
+/*    position: fixed; */
     top: 0;
     width: 100%;
    }
